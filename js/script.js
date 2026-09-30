@@ -1,9 +1,9 @@
-const editor = document.getElementById('editor');
-const btnBold = document.getElementById('btnBold');
-const btnItalic = document.getElementById('btnItalic');
-const btnNormal = document.getElementById('btnNormal');
-const selectSize = document.getElementById('selectSize');
-const colorPicker = document.getElementById('colorPicker');
+const editor = document.querySelector('#editor');
+const btnBold = document.querySelector('#btnBold');
+const btnItalic = document.querySelector('#btnItalic');
+const btnNormal = document.querySelector('#btnNormal');
+const selectSize = document.querySelector('#selectSize');
+const colorPicker = document.querySelector('#colorPicker');
 
 function focusEditor() {
     editor.focus();
