@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>текстовий редактор</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>текстовий редактор</h1>
+    <div class="toolbar">
+        <button id="btnBold"><b>Жирний</b></button>
+        <button id="btnItalic"><i>Косий</i></button>
+        <button id="btnNormal">Звичайний</button>
+
+        <select id="selectSize">
+            <option value="3">Звичайний розмір</option>
+            <option value="1">Дуже малий</option>
+            <option value="2">Малий</option>
+            <option value="4">Великий</option>
+            <option value="5">Дуже великий</option>
+            <option value="6">Величезний</option>
+        </select>
+
+        <label for="colorPicker">Колір:</label>
+        <input type="color" id="colorPicker" value="#000000">
+    </div>
+
+    <div id="editor" class="editor" contenteditable="true">
+        Введіть текст
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

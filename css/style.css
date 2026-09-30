@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #fcfcfc;
+}
+
+.toolbar {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.toolbar button, 
+.toolbar select, 
+.toolbar input {
+    margin-right: 8px;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.toolbar button:hover,
+.toolbar select:hover {
+    background-color: #e5e5e5;
+}
+
+.editor {
+    width: 100%;
+    min-height: 300px;
+    border: 2px solid #000;
+    padding: 15px;
+    margin: 12px 0 0;
+    font-size: 16px;
+    background-color: #ccc;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#editor:focus {
+    border-color: #007BFF;
+}
