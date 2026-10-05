@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>текстовий редактор</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <h1>текстовий редактор</h1>
     <div class="toolbar">
         <button id="btnBold"><b>Жирний</b></button>
         <button id="btnItalic"><i>Косий</i></button>
         <button id="btnNormal">Звичайний</button>
+
+        <select id="selectAlign">
+            <option value="justifyLeft">За замовчуванням</option>
+            <option value="justifyCenter">Посередині</option>
+            <option value="justifyRight">По кінцю</option>
+        </select>
 
         <select id="selectSize">
             <option value="3">Звичайний розмір</option>
@@ -31,4 +39,5 @@
     </div>
     <script src="js/script.js"></script>
 </body>
+
 </html>

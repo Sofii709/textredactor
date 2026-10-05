@@ -4,6 +4,7 @@ const btnItalic = document.querySelector('#btnItalic');
 const btnNormal = document.querySelector('#btnNormal');
 const selectSize = document.querySelector('#selectSize');
 const colorPicker = document.querySelector('#colorPicker');
+const selectAlign = document.querySelector('#selectAlign');
 
 function focusEditor() {
     editor.focus();
@@ -32,4 +33,9 @@ selectSize.addEventListener('change', function() {
 colorPicker.addEventListener('change', function() {
     focusEditor();
     document.execCommand('foreColor', false, colorPicker.value);
+});
+
+selectAlign.addEventListener('change', function() { 
+  focusEditor(); 
+  document.execCommand(selectAlign.value, false, null); 
 });
